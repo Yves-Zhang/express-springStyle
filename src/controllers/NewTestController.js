@@ -6,10 +6,11 @@ import {
 @RestController
 class NewTestController {
 
+	name = 'zhangsan'
+
 	@RestMapping('/user')
 	getUser(req, res) {
-		console.log(req)
-		res.send('hello');
+		res.send(this.name);
 	}
 }
 
