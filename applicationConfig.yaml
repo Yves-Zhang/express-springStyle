@@ -1,0 +1,8 @@
+# 设置application 主文件目录 默认值如下
+# application: 
+#   fileName: "src"
+#   mainJs: "applicationContext"
+
+# 设置静态资源 文件夹 默认值如下
+# staticResource: 
+#   fileName: ["www"]
