@@ -4,8 +4,7 @@ import {
 } from '../../lib/core';
 
 @RestController
-@RestMapping('/test')
-class TestController {
+class NewTestController {
 
 	@RestMapping('/user')
 	getUser(req, res) {
@@ -14,4 +13,4 @@ class TestController {
 	}
 }
 
-export default TestController;
+export default NewTestController;
