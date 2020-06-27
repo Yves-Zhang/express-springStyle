@@ -15,7 +15,7 @@ import LogMiddleWare from './middleWares'
 class ApplicationContext extends NodeApplication {
     applicationBeforeMounted(app) {}
     applicationMounted(...arg) {
-        console.log(yamlConfig)
+        // console.log(yamlConfig)
     }
 }
 
