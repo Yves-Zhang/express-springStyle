@@ -8,8 +8,10 @@ import {
 import './controllers/TestController'
 import './controllers/NewTestController'
 
+import LogMiddleWare from './middleWares'
+
 @Application
-@CombineMiddleWare()
+@CombineMiddleWare(LogMiddleWare)
 class ApplicationContext extends NodeApplication {
     applicationBeforeMounted(app) {}
     applicationMounted(...arg) {
