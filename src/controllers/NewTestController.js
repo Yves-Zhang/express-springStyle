@@ -9,9 +9,9 @@ class NewTestController {
 	name = 'zhangsan'
 
 	@RestMapping('/user')
-	getUser(req, res) {
-		console.log(req)
-		res.send("hello");
+	getUser(data, res) {
+		console.log(data)
+		res.send(data);
 	}
 }
 

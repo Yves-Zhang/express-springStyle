@@ -10,8 +10,8 @@ class TestController {
 	name="lisi"
 
 	@RestMapping('/user')
-	getUser(req, res) {
-		res.send(this.name);
+	getUser(data, res) {
+		res.send(data);
 	}
 }
 
