@@ -1,8 +1,7 @@
 import {
     NodeApplication,
     Application,
-    CombineMiddleWare,
-    yamlConfig
+    CombineMiddleWare
 } from '../lib/core';
 
 import './controllers/TestController'
@@ -12,11 +11,6 @@ import LogMiddleWare from './middleWares'
 
 @Application
 @CombineMiddleWare(LogMiddleWare)
-class ApplicationContext extends NodeApplication {
-    applicationBeforeMounted(app) {}
-    applicationMounted(...arg) {
-        // console.log(yamlConfig)
-    }
-}
+class ApplicationContext extends NodeApplication {}
 
 export default ApplicationContext;
